@@ -18,7 +18,7 @@
           "images/portfolio/animal-shelter/p1.jpg",
           "images/portfolio/animal-shelter/p2.jpg"
         ],
-        "url": "",
+        "url": "https://runrun.ae",
         "technologies": [
           {
             "class": "devicon-laravel-plain",
@@ -69,6 +69,64 @@
           {
             "class": "devicon-react-plain",
             "name": "React JS"
+          }
+        ]
+      },
+      {
+        "title": "Ducon ODL",
+        "startDate": "2019",
+        "description": "An Ecommerce platform for Outdoor Living Products, with portfolios of multiple outdoor living model.",
+        "images": [
+          "images/portfolio/ducon/p1.jpg",
+          "images/portfolio/ducon/p2.jpg"
+        ],
+        "url": "https://www.duconodl.com/",
+        "technologies": [
+          {
+            "class": "devicon-yii-plain",
+            "name": "Yii2"
+          },
+          {
+            "class": "devicon-php-plain",
+            "name": "PHP"
+          }
+        ]
+      },
+      {
+        "title": "Ducon Green",
+        "startDate": "2020",
+        "description": "A portfolio website for showcasing all the concrete recycling operations.",
+        "images": [
+          "images/portfolio/ducongreen/p1.jpg"
+        ],
+        "url": "https://www.ducongreen.com/",
+        "technologies": [
+          {
+            "class": "devicon-html-5-plain",
+            "name": "HTML5"
+          },
+          {
+            "class": "devicon-bootstrap-plain",
+            "name": "Bootstrap"
+          }
+        ]
+      },
+      {
+        "title": "800Blocks",
+        "startDate": "2019",
+        "description": "An Ecommerce solution for buying concrete blocks online and downloading quotations online.",
+        "images": [
+          "images/portfolio/blocks/p1.jpg"
+        ],
+        "url": "https://www.800blocks.ae/",
+        "technologies": [
+          {
+            "class": "devicon-concrete5-plain",
+            "name": "Concrete5"
+          },
+          {
+            "class": "devicon-jquery-plain",
+            "name": "JQuery"
           }
         ]
       }
