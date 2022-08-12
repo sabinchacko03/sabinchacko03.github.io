@@ -19,16 +19,6 @@
     "skills": {
       "icons": [
         {
-          "name": "HTML 5",
-          "class": "devicon-html5-plain",
-          "level": "95"
-        },
-        {
-          "name": "CSS 3",
-          "class": "devicon-css3-plain",
-          "level": "95"
-        },
-        {
           "name": "PHP",
           "class": "devicon-php-plain",
           "level": "80"
@@ -39,19 +29,34 @@
           "level": "90"
         },
         {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain",
-          "level": "70"
-        },
-        {
           "name": "React JS",
           "class": "devicon-react-original",
           "level": "75"
         },
         {
+          "name": "HTML 5",
+          "class": "devicon-html5-plain",
+          "level": "95"
+        },
+        {
+          "name": "CSS 3",
+          "class": "devicon-css3-plain",
+          "level": "95"
+        },        
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain",
+          "level": "70"
+        },        
+        {
           "name": "Bootstrap",
           "class": "devicon-bootstrap-plain",
           "level": "85"
+        },
+        {
+          "name": "AWS",
+          "class": "devicon-amazonwebservices-plain",
+          "level": "95"
         },
         {
           "name": "MySql",
