@@ -39,8 +39,7 @@
         "startDate": "2021",
         "description": "An online dashboard to manage routes and riders. Enhanced my googlemaps api, the dispatcher module shows a dashboard to analyse all the riders and order in realtime.",
         "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
+          "images/portfolio/photography/p1.jpg"
         ],
         "url": "https://courier.deliveryzone.ae",
         "technologies": [
@@ -59,8 +58,7 @@
         "startDate": "2021",
         "description": "An online portal to refer a friend to the PROZone Business Hub, which will earn us a reward.",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
+          "images/portfolio/adventure/p1.jpg"
         ],
         "url": "https://referral.prozone.ae",
         "technologies": [
