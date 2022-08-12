@@ -1,0 +1,216 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "👋 I'm Sabin Chacko. A Web Developer, ever since I started working with PHP Codeigniter in 2013. Started using Laravel and later started working with React JS. Knows Python. Thank you 💜",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "RunRun Ecommerce",
+        "startDate": "2021",
+        "description": "An end to end Ecommerce solution. Based in Abu Dhabi. Provides multiple vendors and vendor login options, provided in both Web and Mobile phone platforms. Integrated to the Dispatcher module to manage fleets.",
+        "images": [
+          "images/portfolio/animal-shelter/p1.jpg",
+          "images/portfolio/animal-shelter/p2.jpg"
+        ],
+        "url": "https://runrun.ae",
+        "technologies": [
+          {
+            "class": "devicon-laravel-plain",
+            "name": "Laravel"
+          },
+          {
+            "class": "devicon-react-plain",
+            "name": "React Native"
+          },
+          {
+            "class": "devicon-mysql-plain",
+            "name": "MySQL"
+          }
+        ]
+      },
+      {
+        "title": "RunRun Dispatcher",
+        "startDate": "2021",
+        "description": "An online dashboard to manage routes and riders. Enhanced my googlemaps api, the dispatcher module shows a dashboard to analyse all the riders and order in realtime.",
+        "images": [
+          "images/portfolio/photography/p1.jpg"
+        ],
+        "url": "https://courier.deliveryzone.ae",
+        "technologies": [
+          {
+            "class": "devicon-laravel-original",
+            "name": "Laravel"
+          },
+          {
+            "class": "devicon-react-plain",
+            "name": "React Native"
+          }
+        ]
+      },
+      {
+        "title": "Referral Portal",
+        "startDate": "2021",
+        "description": "An online portal to refer a friend to the PROZone Business Hub, which will earn us a reward.",
+        "images": [
+          "images/portfolio/adventure/p1.jpg"
+        ],
+        "url": "https://referral.prozone.ae",
+        "technologies": [
+          {
+            "class": "devicon-laravel-plain",
+            "name": "Laravel"
+          },
+          {
+            "class": "devicon-react-plain",
+            "name": "React JS"
+          }
+        ]
+      },
+      {
+        "title": "Ducon ODL",
+        "startDate": "2019",
+        "description": "An Ecommerce platform for Outdoor Living Products, with portfolios of multiple outdoor living model.",
+        "images": [
+          "images/portfolio/ducon/p1.jpg",
+          "images/portfolio/ducon/p2.jpg"
+        ],
+        "url": "https://www.duconodl.com/",
+        "technologies": [
+          {
+            "class": "devicon-yii-plain",
+            "name": "Yii2"
+          },
+          {
+            "class": "devicon-php-plain",
+            "name": "PHP"
+          }
+        ]
+      },
+      {
+        "title": "Ducon Green",
+        "startDate": "2020",
+        "description": "A portfolio website for showcasing all the concrete recycling operations.",
+        "images": [
+          "images/portfolio/ducongreen/p1.jpg"
+        ],
+        "url": "https://www.ducongreen.com/",
+        "technologies": [
+          {
+            "class": "devicon-html-5-plain",
+            "name": "HTML5"
+          },
+          {
+            "class": "devicon-bootstrap-plain",
+            "name": "Bootstrap"
+          }
+        ]
+      },
+      {
+        "title": "800Blocks",
+        "startDate": "2019",
+        "description": "An Ecommerce solution for buying concrete blocks online and downloading quotations online.",
+        "images": [
+          "images/portfolio/blocks/p1.jpg"
+        ],
+        "url": "https://www.800blocks.ae/",
+        "technologies": [
+          {
+            "class": "devicon-concrete5-plain",
+            "name": "Concrete5"
+          },
+          {
+            "class": "devicon-jquery-plain",
+            "name": "JQuery"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Delivery Zone for Delivery",
+        "title": "Software Developer",
+        "years": "7/2021 - present",
+        "mainTech": [
+          "Laravel",
+          "React"
+        ],
+        "technologies": [
+          "REST API",
+          "SOAP API",
+          "Google APIs",
+          "JavaScript",
+          "Bootstrap",
+          "MySQL",
+          "JQuery",
+          "Google Firebase",
+          "AWS"
+        ]
+      },
+      {
+        "company": "Ducon Industries FZCO",
+        "title": "Web Developer",
+        "years": "04/2019 - 07/2021",
+        "mainTech": [
+          "Laravel",
+          "Concrete5",
+          "Yii2"
+        ],
+        "technologies": [
+          "PHP",
+          "JQuery",
+          "JavaScript",
+          "MySQL",
+          "REST API",
+          "React JS"
+        ]
+      },
+      {
+        "company": "Infinite Open Source Solutions",
+        "title": "Team Leader",
+        "years": "10/2017 - 02/2019",
+        "mainTech": [
+          "Codeigniter",
+          "Laravel"
+        ],
+        "technologies": [
+          "PHP",
+          "JQuery",
+          "JavaScript",
+          "MySQL"
+        ]
+      },
+      {
+        "company": "Braddock Infotech",
+        "title": "Software Programmer",
+        "years": "09/2015 - 10/2017",
+        "mainTech": [
+          "PHP",
+          "Wordpress",
+          "Python"
+        ],
+        "technologies": [
+          "JQuery",
+          "MySQL"
+        ]
+      },
+      {
+        "company": "Infinite Open Source Solutions",
+        "title": "Web Developer",
+        "years": "11/2013 - 08/2015",
+        "mainTech": [
+          "Codeigniter"
+        ],
+        "technologies": [
+          "JQuery",
+          "MySQL",
+          "Bootstrap"
+        ]
+      }
+    ]
+  }

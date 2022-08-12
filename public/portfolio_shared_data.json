@@ -5,7 +5,7 @@
       "social": [
         {
           "name": "github",
-          "url": "https://github.com",
+          "url": "https://github.com/sabinchacko03",
           "class": "fab fa-github"
         },
         {
@@ -19,6 +19,21 @@
     "skills": {
       "icons": [
         {
+          "name": "PHP",
+          "class": "devicon-php-plain",
+          "level": "80"
+        },
+        {
+          "name": "Laravel",
+          "class": "devicon-laravel-plain",
+          "level": "90"
+        },
+        {
+          "name": "React JS",
+          "class": "devicon-react-original",
+          "level": "75"
+        },
+        {
           "name": "HTML 5",
           "class": "devicon-html5-plain",
           "level": "95"
@@ -27,36 +42,21 @@
           "name": "CSS 3",
           "class": "devicon-css3-plain",
           "level": "95"
-        },
-        {
-          "name": "Angular",
-          "class": "devicon-angularjs-plain",
-          "level": "80"
-        },
-        {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
-        },
+        },        
         {
           "name": "JavaScript",
           "class": "devicon-javascript-plain",
           "level": "70"
-        },
-        {
-          "name": "Sass",
-          "class": "devicon-sass-original",
-          "level": "75"
-        },
+        },        
         {
           "name": "Bootstrap",
           "class": "devicon-bootstrap-plain",
           "level": "85"
         },
         {
-          "name": "C#",
-          "class": "devicon-csharp-plain",
-          "level": "65"
+          "name": "AWS",
+          "class": "devicon-amazonwebservices-plain",
+          "level": "95"
         },
         {
           "name": "MySql",
