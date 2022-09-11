@@ -9,9 +9,14 @@
           "class": "fab fa-github"
         },
         {
-          "name": "instagram",
-          "url": "https://www.instagram.com",
-          "class": "fab fa-instagram"
+          "name": "Stack Overflow",
+          "url": "https://stackoverflow.com/users/3085642/sabin-chacko",
+          "class": "fab fa-stack-overflow"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/sabin-chacko",
+          "class": "fab fa-linkedin"
         }
       ],
       "image": "myProfile.jpg"
