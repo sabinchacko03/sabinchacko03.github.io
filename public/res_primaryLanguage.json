@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Hi",
-      "description": "👋 I'm Sabin Chacko. A Web Developer, ever since I started working with PHP Codeigniter in 2013. Started using Laravel and worked on a some major projects in Laravel. Mostly worked as a Backend Developer handling REST and SOAP APIs, most of the times, with MySQL Databases. Knows ReactJS and Python. Thank you 💜",
+      "description": "👋 I'm Sabin Chacko. A Web Developer, ever since I started working with PHP Codeigniter in 2013. Later started using Laravel and worked on some major projects written in Laravel. Mostly worked as a Backend Developer handling REST and SOAP APIs, most of the times, with MySQL Databases. Knows ReactJS and Python. Thank you 💜",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
