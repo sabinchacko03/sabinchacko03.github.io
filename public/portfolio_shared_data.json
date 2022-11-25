@@ -67,6 +67,11 @@
           "name": "MySql",
           "class": "devicon-mysql-plain",
           "level": "60"
+        },
+        {
+          "name": "GitHub Actions",
+          "class": "devicon-github-original",
+          "level": "60"
         }
       ]
     }
