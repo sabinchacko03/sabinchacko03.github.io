@@ -25,7 +25,7 @@ export default function Home() {
           Sabin Chacko
         </h1>
         <p className={`m-0 md:mt-5 max-w-[95ch] text-sm opacity-50`}>
-          {"👋 I'm Sabin Chacko. A Web Developer ever since I started working with PHP Codeigniter in 2013. Later started using Laravel and worked on some major projects written in Laravel. Mostly worked as a Backend Developer. My works varies from developing custom workflow handling dashboards to, writing backend APIs form complex apps like ecommerce apps. I have developed both REST APIs and SOAP Web services. Worked with MySQL, MS SQL SERVER, PostgreSQL & SAP HANA DB Databases. Knows Javascript and Python, Django, Flask and React. Thank you 💜"}
+          {"👋 I'm Sabin Chacko. A Web Developer ever since I started working with PHP Codeigniter in 2013. Later started using Laravel and worked on some major projects written in Laravel. Mostly worked as a Backend Developer. My works varies from developing fullstack custom workflow handling dashboards to, writing backend APIs for ecommerce and delivery agent tracking apps. I have developed both REST APIs and SOAP Web services. Worked with MySQL, MS SQL SERVER, PostgreSQL & SAP HANA DB Databases. Knows Javascript and Python, Django, Flask and React. Thank you 💜"}
         </p>
       </div>
 
