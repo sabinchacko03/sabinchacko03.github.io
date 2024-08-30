@@ -58,14 +58,16 @@ export let experiences = [
         "mainTech": [
             "Laravel",
             "Tailwind",
-            "Microsoft SQL Server"
+            "MS SQL Server"
         ],
         "technologies": [
             "AlpineJS",
             "Tailwind CSS",
-            "JavaScript",
-            "MySQL",
-            "Single Sign-On"
+            "Livewire",
+            "HANA DB",
+            "SSO",
+            "Azure",
+            "Linux",
         ]
     },
     {
