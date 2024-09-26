@@ -39,7 +39,7 @@ export default function Home() {
       <div className="text-center mt-4">
         <h2 className={`text-2xl font-semibold my-4`}>skills</h2>
 
-        <div className="relative ">
+        <div className="relative bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-600/20 via-gray-200/10 to-transparent">
           <ul className="flex gap-2 flex-wrap justify-center dark:bg-gray-800 p-4 rounded-lg">
             {skills.map((skill, i) => {
               return (
