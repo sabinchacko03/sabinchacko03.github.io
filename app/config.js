@@ -8,16 +8,24 @@ export let skills = [
         "icon": "devicon-laravel-plain",
     },
     {
-        "name": "Tailwind CSS",
-        "icon": "devicon-tailwindcss-plain",
-    },
-    {
         "name": "React JS",
         "icon": "devicon-react-original",
     },
     {
         "name": "NEXT JS",
         "icon": "devicon-nextjs-plain",
+    },
+    {
+        "name": "JavaScript",
+        "icon": "devicon-javascript-plain",
+    },
+    {
+        "name": "TypeScript",
+        "icon": "devicon-typescript-original",
+    },
+    {
+        "name": "Python",
+        "icon": "devicon-python-plain colored",
     },
     {
         "name": "HTML 5",
@@ -28,8 +36,8 @@ export let skills = [
         "icon": "devicon-css3-plain",
     },
     {
-        "name": "JavaScript",
-        "icon": "devicon-javascript-plain",
+        "name": "Tailwind CSS",
+        "icon": "devicon-tailwindcss-plain",
     },
     {
         "name": "Bootstrap",
@@ -57,7 +65,6 @@ export let experiences = [
         "location":"Abu Dhabi, UAE",
         "mainTech": [
             "Laravel",
-            "Tailwind",
             "MS SQL Server"
         ],
         "technologies": [
@@ -68,6 +75,7 @@ export let experiences = [
             "SSO",
             "Azure",
             "Linux",
+            "TypeScript"
         ]
     },
     {

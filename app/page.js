@@ -14,18 +14,24 @@ export default function Home() {
 
       <div className="relative place-items-center before:absolute before:h-[100px] before:w-[80px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[80px] after:w-[140px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[160px] z-[-1] text-center">
         <h1 className="text-3xl md:text-4xl font-bold my-4">Sabin Chacko</h1>
-        <p className={`m-0 md:mt-5 max-w-[95ch] text-sm opacity-50 my-2 md:m-0`}>
+        <p
+          className={`m-0 md:mt-5 max-w-[95ch] text-sm opacity-50 my-2 md:m-0`}
+        >
           {
             "👋 I am Sabin Chacko, a seasoned Web Developer with over a decade of experience. My journey began in 2013 with PHP CodeIgniter, and I have since specialized in Laravel, contributing to several major projects. Primarily working as a Backend Developer, my expertise spans from developing full-stack custom workflow handling dashboards to creating backend APIs for e-commerce and delivery agent tracking applications."
           }
         </p>
-        <p className={`m-0 md:mt-5 max-w-[95ch] text-sm opacity-50 my-2 md:m-0`}>
+        <p
+          className={`m-0 md:mt-5 max-w-[95ch] text-sm opacity-50 my-2 md:m-0`}
+        >
           {
             "I have extensive experience in developing both REST APIs and SOAP Web services. My database proficiency includes MySQL, MS SQL Server, PostgreSQL, and SAP HANA DB. Additionally, I am skilled in JavaScript, Python, Django, Flask, and React. I also handle code deployment to Linux servers, primarily using AWS and Azure."
           }
         </p>
 
-        <p className={`m-0 md:mt-5 max-w-[95ch] text-sm opacity-50 my-2 md:m-0`}>
+        <p
+          className={`m-0 md:mt-5 max-w-[95ch] text-sm opacity-50 my-2 md:m-0`}
+        >
           {"Thank you for visiting my portfolio. 💜"}
         </p>
       </div>
@@ -84,18 +90,18 @@ export default function Home() {
                       {experience.company}
                     </div>
                   </div>
-                  <time className="font-caveat font-medium text-sky-700 dark:text-sky-200 text-sm">
+                  <time className="font-caveat font-medium text-lime-600 dark:text-sky-200 text-sm">
                     {experience.years}
                   </time>
-                  <div className="text-slate-500 dark:text-slate-400 font-bold text-sm md:text-normal">
+                  <div className="text-blue-400 dark:text-slate-400 font-bold text-sm md:text-normal">
                     {experience.mainTech.join(", ")}
                   </div>
-                  <div className="text-slate-500 text-sm md:text-normal">
+                  <div className="text-sky-700 text-xs md:text-normal my-2">
                     {experience.technologies.join(", ")}
                   </div>
-                  <div className="text-gray-600 flex justify-center text-sm mt-2">
+                  <div className="text-gray-500 flex justify-center text-sm mt-2">
                     <svg
-                      className="w-6 h-6"
+                      className="w-5 h-5"
                       viewBox="0 0 16 16"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
@@ -115,10 +121,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mb-32 flex justify-between text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left mt-4">
+      <div className="mb-10 block md:flex justify-between text-center lg:max-w-5xl lg:w-full w-full lg:mb-0  lg:text-left mt-8">
         <a
           href="https://ae.linkedin.com/in/sabin-chacko?trk=people-guest_people_search-card"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30 flex flex-col items-center"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -135,12 +141,12 @@ export default function Home() {
 
         <a
           href="https://github.com/sabinchacko03"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 flex flex-col items-center"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            GIthub{" "}
+            GitHub{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -151,7 +157,7 @@ export default function Home() {
         </a>
         <a
           href="https://stackoverflow.com/users/3085642/sabin-chacko"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 flex flex-col items-center"
           target="_blank"
           rel="noopener noreferrer"
         >
