@@ -18,7 +18,7 @@ export default function Home() {
           className={`m-0 md:mt-5 max-w-[95ch] text-sm opacity-50 my-2 md:m-0`}
         >
           {
-            "👋 I am Sabin Chacko, a seasoned Web Developer with over a decade of experience. My journey began in 2013 with PHP CodeIgniter, and I have since specialized in Laravel, contributing to several major projects. Primarily working as a Backend Developer, my expertise spans from developing full-stack custom workflow handling dashboards to creating backend APIs for e-commerce and delivery agent tracking applications."
+            "👋 I am Sabin Chacko, a Fullstack Web Developer for the last 11 years. My journey began in 2013 with PHP CodeIgniter, and I have since specialized in Laravel, contributing to several major projects. Primarily working as a Backend Developer, my expertise spans from developing full-stack custom workflow handling dashboards to creating backend APIs for e-commerce and delivery agent tracking applications."
           }
         </p>
         <p
@@ -62,7 +62,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="text-center mt-4">
+      <div className="text-center mt-4  w-full md:w-3/4">
         <h2 className={`my-4 text-2xl font-semibold`}>Experience</h2>
         <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
           {experiences.map((experience, index) => {
@@ -85,9 +85,12 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-100 dark:bg-gray-800 p-4 rounded border border-slate-200 dark:border-slate-800">
-                  <div className="flex items-center justify-center space-x-2 mb-1">
+                  <div className="flex flex-col items-center justify-center space-x-2 mb-1">
                     <div className="font-bold text-slate-900 dark:text-slate-200">
                       {experience.company}
+                    </div>
+                    <div className="text-gray-500 flex justify-center text-sm ">
+                      {experience.location}
                     </div>
                   </div>
                   <time className="font-caveat font-medium text-lime-600 dark:text-sky-200 text-sm">
@@ -99,21 +102,14 @@ export default function Home() {
                   <div className="text-sky-700 text-xs md:text-normal my-2">
                     {experience.technologies.join(", ")}
                   </div>
-                  <div className="text-gray-500 flex justify-center text-sm mt-2">
-                    <svg
-                      className="w-5 h-5"
-                      viewBox="0 0 16 16"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M10.832 2.688A4.056 4.056 0 0 0 8.02 1.5h-.04a4.056 4.056 0 0 0-4 4c-.013.75.198 1.487.606 2.117L7.734 14h.533l3.147-6.383c.409-.63.62-1.367.606-2.117a4.056 4.056 0 0 0-1.188-2.812zM7.925 2.5l.082.01.074-.01a3.075 3.075 0 0 1 2.941 3.037 2.74 2.74 0 0 1-.467 1.568l-.02.034-.017.035L8 12.279l-2.517-5.1-.017-.039-.02-.034a2.74 2.74 0 0 1-.467-1.568A3.074 3.074 0 0 1 7.924 2.5zm.612 2.169a1 1 0 1 0-1.112 1.663 1 1 0 0 0 1.112-1.663zM6.87 3.837a2 2 0 1 1 2.22 3.326 2 2 0 0 1-2.22-3.326z"
-                      />
-                    </svg>
-                    {experience.location}
-                  </div>
+                  {experience.jobDetails && (
+                    <details className="text-sm">
+                      <summary className="cursor-pointer">Job Details</summary>
+                      <p className="text-gray-500 w-full-important">
+                        {experience.jobDetails}
+                      </p>
+                    </details>
+                  )}
                 </div>
               </div>
             );
