@@ -75,7 +75,7 @@ export let experiences = [
       "TypeScript",
     ],
     jobDetails:
-      "Working as a Lead Software Engineer. Building an internal workflow application with PWA features. Developed using Laravel 10. Uses MS SQL Server Database. Implemented ODBC connection using HANA DB drivers for connection with SAP Hanadb Schemas. Used Laravel Queue and Notification features for seamless user experience. Enhanced the PWA app using push notification. Deployed in Azure cloud, on a Linux (Ubuntu) VM.",
+      "Working as a Lead Software Engineer. Building an internal workflow application with PWA features. Developed using Laravel 10. Uses MS SQL Server Database. Implemented ODBC connection using HANA DB drivers for connection with SAP Hanadb Schemas. Used Laravel Queue and Notification features for seamless user experience. Enhanced the PWA app using push notification. Implemented secure displaying of mutiple document types through browser. Doing deployments in Azure cloud, on a Linux (Ubuntu) VM.",
   },
   {
     company: "Delivery Zone for Delivery",
@@ -96,7 +96,7 @@ export let experiences = [
       "GitHub Actions",
     ],
     jobDetails:
-      "Lead Software Developer for an Ecommerce and Delivery app. Managed the team towards the successfull integration of Delivery App with AD Police app. Used Laravel & AWS services (EC2, S3, RDS) in the backend. Used React Native in the frontend. Used Laravel Queue system extensively for order allocation and notifications. Built SOAP Web Services API in Laravel for the vendors to consume.",
+      "Lead Software Developer for an Ecommerce and Delivery app. Managed the team towards the successfull integration of Delivery App with AD Police System. Used Laravel, Firebase & AWS services (EC2, S3, RDS) in the backend. Used React Native in the frontend. Used Laravel Queue system along with Redis for critical actions like order allocation and notifications. Built SOAP Web Services API in Laravel for the vendors to consume.",
   },
   {
     company: "Ducon Industries FZCO",
@@ -123,7 +123,7 @@ export let experiences = [
     mainTech: ["Codeigniter", "Laravel"],
     technologies: ["PHP", "JQuery", "JavaScript", "MySQL"],
     jobDetails:
-      "Managed company's 5 Ecommerce websites. Used Laravel, Yii2 and Concrete5 for managing Ecommerce apps. Successfully integrated with Salesforce to develop an ecommerce application with Salesforce backend. Used React components in the frontend. Optimized website performances using database optimization, cacheing, CDN, lazy loading, etc.",
+      "Led a team of developers and testers, ensuring the successful completion of tasks and projects. Facilitated effective communication with stakeholders and management to gather and clarify requirements. Played an active role in development, utilizing PHP, JavaScript, Laravel, and CodeIgniter to deliver high-quality solutions.",
   },
   {
     company: "Braddock Infotech",
@@ -142,5 +142,7 @@ export let experiences = [
     location: "Kerala, India",
     mainTech: ["Codeigniter"],
     technologies: ["JQuery", "MySQL", "Bootstrap"],
+    jobDetails:
+      "Started developing web applications using HTML, CSS and PHP. Used Codeigniter, MySQL and Apache. Promoted as a Team Leader, interacted with the stakeholders and ensured the requirement delivery.",
   },
 ];

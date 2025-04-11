@@ -1,8 +1,29 @@
 import Image from "next/image";
 import "devicon";
 import { skills, experiences } from "./config";
+import JobDetails from "./components/JobDetails";
 
 export default function Home() {
+  const calculateYears = () => {
+    const startDate = new Date(2013, 10);
+    const currentDate = new Date();
+
+    let yearsDifference = currentDate.getFullYear() - startDate.getFullYear();
+
+    if (
+      currentDate.getMonth() < startDate.getMonth() ||
+      (currentDate.getMonth() === startDate.getMonth() &&
+        currentDate.getDate() < startDate.getDate())
+    ) {
+      yearsDifference--;
+    }
+
+    return yearsDifference;
+  };
+
+  const years = calculateYears();
+
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-4">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -17,15 +38,20 @@ export default function Home() {
         <p
           className={`m-0 md:mt-5 max-w-[95ch] text-sm opacity-50 my-2 md:m-0`}
         >
+          {`I am Sabin Chacko, a seasoned Full-Stack Developer with ${years}+ years of expertise in designing and implementing robust web applications. Proficient in multiple PHP frameworks, including Laravel, Yii2, and CodeIgniter. Skilled in frontend technologies such as ReactJS and VueJS, with a solid background in AWS, REST APIs, and SOAP Web Services.`}
+        </p>
+        <p
+          className={`m-0 md:mt-5 max-w-[95ch] text-sm opacity-50 my-2 md:m-0`}
+        >
           {
-            "👋 I am Sabin Chacko, a Fullstack Web Developer for the last 11 years. My journey began in 2013 with PHP CodeIgniter, and I have since specialized in Laravel, contributing to several major projects. Primarily working as a Backend Developer, my expertise spans from developing full-stack custom workflow handling dashboards to creating backend APIs for e-commerce and delivery agent tracking applications."
+            "Proven track record in leading teams, conducting tests, gathering requirements, optimizing application performance, and managing integrations (e.g., courier app to AD Police). Experienced in delivering demo sessions and overseeing deployments. Basic understanding of Python and Django, with a continuous drive to learn and adapt to new technologies."
           }
         </p>
         <p
           className={`m-0 md:mt-5 max-w-[95ch] text-sm opacity-50 my-2 md:m-0`}
         >
           {
-            "I have extensive experience in developing both REST APIs and SOAP Web services. My database proficiency includes MySQL, MS SQL Server, PostgreSQL, and SAP HANA DB. Additionally, I am skilled in JavaScript, Python, Django, Flask, and React. I also handle code deployment to Linux servers, primarily using AWS and Azure."
+            "Passionate about leveraging my technical and leadership skills to drive project success and contribute to innovative solutions."
           }
         </p>
 
@@ -102,14 +128,7 @@ export default function Home() {
                   <div className="text-sky-700 text-xs md:text-normal my-2">
                     {experience.technologies.join(", ")}
                   </div>
-                  {experience.jobDetails && (
-                    <details className="text-sm">
-                      <summary className="cursor-pointer">Job Details</summary>
-                      <p className="text-gray-500 w-full-important">
-                        {experience.jobDetails}
-                      </p>
-                    </details>
-                  )}
+                  <JobDetails experience={experience} />
                 </div>
               </div>
             );
