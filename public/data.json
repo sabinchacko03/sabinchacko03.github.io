@@ -1,0 +1,131 @@
+{
+    "experience": [{
+            "title": "Internal Workflow Engine",
+            "description": "Simplifi is a full-stack enterprise application built to streamline master data workflows, policy governance, internal control reporting, GRC automation, and external account management. It features modular capabilities including SAP-integrated business partner management, delegation of authority (DOA), ICFR dashboards, and Etisalat account provisioning. The platform also integrates with Pathlock to automate user access provisioning and trigger GRC controls within SAP, enhancing compliance and audit readiness.",
+            "sections": [{
+                    "title": "Application Structure",
+                    "color": "text-blue-400",
+                    "items": [
+                        "Laravel, MSSQL Server, HanaDB",
+                        "Livewire, Javascript & TailwindCSS",
+                        "Azure, Ubntu, Nginx, Azure WAF, SSO"
+                    ]
+                },
+                {
+                    "title": "Integrations",
+                    "color": "text-purple-400",
+                    "items": [
+                        "SAP: Business Partner workflows",
+                        "Salesforce: Customer onboarding",
+                        "Pathlock: Access provisioning & GRC",
+                        "SAP: Automating PR,PO & SO workflows"
+                    ]
+                }
+            ],
+            "achievementsTitle": "Key Achievements",
+            "achievements": [
+                "Automated 90% of Business Partner workflows",
+                "Implemented DOA module for group-wide policy and transaction governance",
+                "Resolved SAP approval bottlenecks across multi-layered workflows"
+
+            ],
+            "architectureTitle": "Workflow Application Architecture",
+            "architectureSvg": "SimplifiArchitecture"
+        },
+        {
+            "title": "RunRun Ecommerce",
+            "description": "A scalable multi-vendor marketplace platform featuring shop and product management, built for performance and growth",
+            "sections": [{
+                    "title": "Frontend Features",
+                    "color": "text-blue-400",
+                    "items": [
+                        "Real-time Data Visualization",
+                        "Interactive Dashboards",
+                        "Custom Chart Components",
+                        "Data Export Tools"
+                    ]
+                },
+                {
+                    "title": "Backend Pipeline",
+                    "color": "text-purple-400",
+                    "items": [
+                        "Apache Kafka Streams",
+                        "ClickHouse Analytics DB",
+                        "Python Data Processing",
+                        "Redis Time Series"
+                    ]
+                }
+            ],
+            "achievementsTitle": "Performance Metrics",
+            "achievements": [
+                "1M+ Events/Minute Processing",
+                "Sub-second Query Response",
+                "99.99% Data Accuracy"
+            ],
+            "architectureTitle": "System Architecture",
+            "architectureSvg": "RunRunArchitecture"
+        }
+    ],
+    "skills": [{
+            "name": "Laravel",
+            "level": "Expert",
+            "description": "Proficient in Laravel & Laravel tools for building scalable web applications."
+        },
+        {
+            "name": "PHP",
+            "level": "Expert",
+            "description": "Understand the core concepts of PHP and how to use it to build scalable web applications."
+        },
+        {
+            "name": "Javascript",
+            "level": "Expert",
+            "description": "Proficient in Javascript and how to use it to build modern web applications."
+        },
+        {
+            "name": "REST API",
+            "level": "Expert",
+            "description": "Proficient in REST APIs, implemented numerous integrations with third party services."
+        },
+        {
+            "name": "SQL",
+            "level": "Expert",
+            "description": "Proficient in SQL, worked with MySQL, PostgreSQL, MSSQL and HanaDB."
+        },
+        {
+            "name": "Python",
+            "level": "Intermediate",
+            "description": "Intermediate knowledge."
+        },
+        {
+            "name": "Django",
+            "level": "Intermediate",
+            "description": "Intermediate knowledge."
+        },
+        {
+            "name": "React",
+            "level": "Intermediate",
+            "description": "Proficient in React, Redux, and React Router for building scalable web applications."
+        },
+        {
+            "name": "Next.js",
+            "level": "Intermediate",
+            "description": "Basic knowledge of Next.js, used it to build portfolios and small projects."
+        },
+        {
+            "name": "AWS",
+            "level": "Intermediate",
+            "description": "EC2, S3,RDS, Lightsail."
+        },
+        {
+            "name": "Linux",
+            "level": "Intermediate",
+            "description": "Devops, CI/CD, Docker, Github Actions."
+        }
+    ],
+    "projects": [{
+        "name": "Workflow Engine",
+        "description": "Description of Project 1",
+        "technologies": ["Technology 1", "Technology 2", "Technology 3"],
+        "link": "https://github.com/username/project1"
+    }]
+}
