@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: '[Your Name] - Full-Stack Developer',
+	title: 'Sabin Chacko - Full-Stack Developer',
 	description:
 		'Welcome to my portfolio! I am a passionate full-stack developer who bridges the gap between frontend and backend development. Specializing in creating complete web solutions, from beautiful user interfaces to robust server architectures.',
 	keywords: [
@@ -31,22 +31,22 @@ export const metadata: Metadata = {
 		'DevOps',
 		'System Architecture',
 		'Web Development',
-		'[Your Name]',
+		'Sabin Chacko',
 	],
-	authors: [{ name: '[Your Name]' }],
-	creator: '[Your Name]',
+	authors: [{ name: 'Sabin Chacko' }],
+	creator: 'Sabin Chacko',
 	openGraph: {
-		title: '[Your Name] - Full-Stack Developer Portfolio',
+		title: 'Sabin Chacko - Full-Stack Developer Portfolio',
 		description:
 			'Passionate full-stack developer creating complete web solutions. Explore my projects and technical expertise across the entire development stack.',
 		url: 'https://your-domain.com',
-		siteName: '[Your Name] - Portfolio',
+		siteName: 'Sabin Chacko - Portfolio',
 		images: [
 			{
 				url: '/og-image.jpg',
 				width: 1200,
 				height: 630,
-				alt: '[Your Name] - Full-Stack Developer Portfolio',
+				alt: 'Sabin Chacko - Full-Stack Developer Portfolio',
 			},
 		],
 		locale: 'en_US',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: '[Your Name] - Full-Stack Developer',
+		title: 'Sabin Chacko - Full-Stack Developer',
 		description:
 			'Passionate full-stack developer creating complete web solutions. Explore my projects and technical expertise across the entire development stack.',
 		creator: '@yourusername',

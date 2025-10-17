@@ -33,34 +33,40 @@
             "architectureSvg": "SimplifiArchitecture"
         },
         {
-            "title": "RunRun Ecommerce",
-            "description": "A scalable multi-vendor marketplace platform featuring shop and product management, built for performance and growth",
+            "title": "RunRun Ecommerce (Wayno)",
+            "description": "A high-performance, growth-oriented marketplace platform designed to support multiple vendors with comprehensive shop and product management capabilities. The system includes courier and rider tracking apps for real-time logistics monitoring.",
             "sections": [{
-                    "title": "Frontend Features",
+                    "title": "Features",
                     "color": "text-blue-400",
                     "items": [
-                        "Real-time Data Visualization",
-                        "Interactive Dashboards",
-                        "Custom Chart Components",
-                        "Data Export Tools"
+                        "Ecommerce Web & Mobile app",
+                        "Courier App & Agents app",
+                        "Live rider tracking using Google APIs"
                     ]
                 },
                 {
-                    "title": "Backend Pipeline",
+                    "title": "Integrations",
                     "color": "text-purple-400",
                     "items": [
-                        "Apache Kafka Streams",
-                        "ClickHouse Analytics DB",
-                        "Python Data Processing",
-                        "Redis Time Series"
+                        "AD Police App with Courier module",
+                        "Own Delivery app & Ecommerce App"
+                    ]
+                }, {
+                    "title": "Technical Stack",
+                    "color": "text-purple-400",
+                    "items": [
+                        "PHP, Laravel, React Native, SQL, REDIS",
+                        "AWS EC2, RDS, S3",
+                        "Google Map, Firebase"
                     ]
                 }
             ],
-            "achievementsTitle": "Performance Metrics",
+            "achievementsTitle": "Key Responsibilities",
             "achievements": [
-                "1M+ Events/Minute Processing",
-                "Sub-second Query Response",
-                "99.99% Data Accuracy"
+                "Team Leadership: Led a cross-functional team of backend and frontend developers, ensuring smooth collaboration and timely delivery across sprints",
+                "Requirement Gathering: Spearheaded the initial and ongoing requirements analysis, translating business needs into technical specifications.",
+                "Testing Coordination: Worked closely with QA testers to define test cases, manage bug tracking, and ensure product quality across releases.",
+                "Stakeholder Engagement: Conducted meetings with third-party stakeholders, including government entities, to align on compliance, integrations, and operational workflows."
             ],
             "architectureTitle": "System Architecture",
             "architectureSvg": "RunRunArchitecture"

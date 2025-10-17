@@ -55,7 +55,7 @@ export default function RunRunArchitecture() {
           textAnchor="middle"
           className="fill-gray-400 text-[12px]"
         >
-          Pathlock
+          Google APIs
         </text>
       </g>
       <g>
@@ -74,70 +74,13 @@ export default function RunRunArchitecture() {
           textAnchor="middle"
           className="fill-gray-400 text-[12px]"
         >
-          SAP HANADB
+          Firebase
         </text>
       </g>
       <g>
         <rect
           x="20"
           y="80"
-          width="360"
-          height="40"
-          rx="4"
-          className="fill-purple-500/20 stroke-purple-500"
-          strokeWidth="1"
-        />
-        <text
-          x="200"
-          y="105"
-          textAnchor="middle"
-          className="fill-gray-400 text-[12px] font-bold"
-        >
-          RunRun Ecommerce
-        </text>
-      </g>
-      <g>
-        <rect
-          x="50"
-          y="140"
-          width="100"
-          height="40"
-          rx="4"
-          className="fill-purple-500/20 stroke-purple-500"
-          strokeWidth="1"
-        />
-        <text
-          x="105"
-          y="165"
-          textAnchor="middle"
-          className="fill-gray-400 text-[12px]"
-        >
-          Salesforce
-        </text>
-      </g>
-      <g>
-        <rect
-          x="175"
-          y="200"
-          width="50"
-          height="40"
-          rx="4"
-          className="fill-blue-500/20 stroke-blue-500"
-          strokeWidth="1"
-        />
-        <text
-          x="200"
-          y="225"
-          textAnchor="middle"
-          className="fill-gray-400 text-[12px]"
-        >
-          SSO
-        </text>
-      </g>
-      <g>
-        <rect
-          x="20"
-          y="265"
           width="360"
           height="30"
           rx="4"
@@ -146,6 +89,63 @@ export default function RunRunArchitecture() {
         />
         <text
           x="200"
+          y="100"
+          textAnchor="middle"
+          className="fill-gray-400 text-[12px]"
+        >
+          Backend
+        </text>
+      </g>
+      <g>
+        <rect
+          x="20"
+          y="170"
+          width="160"
+          height="40"
+          rx="4"
+          className="fill-purple-500/20 stroke-purple-500"
+          strokeWidth="1"
+        />
+        <text
+          x="100"
+          y="195"
+          textAnchor="middle"
+          className="fill-gray-400 text-[12px] font-bold"
+        >
+          RunRun Ecommerce
+        </text>
+      </g>
+      <g>
+        <rect
+          x="200"
+          y="170"
+          width="160"
+          height="40"
+          rx="4"
+          className="fill-purple-500/20 stroke-purple-500"
+          strokeWidth="1"
+        />
+        <text
+          x="280"
+          y="195"
+          textAnchor="middle"
+          className="fill-gray-400 text-[12px] font-bold"
+        >
+          Agent App
+        </text>
+      </g>
+      <g>
+        <rect
+          x="20"
+          y="265"
+          width="160"
+          height="30"
+          rx="4"
+          className="fill-yellow-500/20 stroke-yellow-500"
+          strokeWidth="1"
+        />
+        <text
+          x="100"
           y="285"
           textAnchor="middle"
           className="fill-gray-400 text-[12px]"
@@ -153,15 +153,34 @@ export default function RunRunArchitecture() {
           Users
         </text>
       </g>
+      <g>
+        <rect
+          x="200"
+          y="265"
+          width="160"
+          height="30"
+          rx="4"
+          className="fill-orange-500/20 stroke-orange-500"
+          strokeWidth="1"
+        />
+        <text
+          x="280"
+          y="285"
+          textAnchor="middle"
+          className="fill-gray-400 text-[12px]"
+        >
+          Riders
+        </text>
+      </g>
       <g className="stroke-gray-600" strokeWidth="1">
-        <line x1="50" y1="60" x2="50" y2="80" />
+        <line x1="50" y1="60" x2="50" y2="80" /> 
         <line x1="145" y1="60" x2="145" y2="80" />
         <line x1="235" y1="60" x2="235" y2="80" />
         <line x1="340" y1="60" x2="340" y2="80" />
-        <line x1="105" y1="120" x2="105" y2="140" />
-        <line x1="105" y1="180" x2="105" y2="265" />
-        <line x1="200" y1="120" x2="200" y2="200" />
-        <line x1="200" y1="240" x2="200" y2="265" />
+        <line x1="105" y1="110" x2="105" y2="170" />
+        <line x1="105" y1="210" x2="105" y2="265" />
+        <line x1="280" y1="110" x2="280" y2="170" />
+        <line x1="280" y1="210" x2="280" y2="265" />
       </g>
     </svg>
   );
