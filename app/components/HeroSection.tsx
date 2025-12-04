@@ -30,7 +30,7 @@ export default function HeroSection() {
         >
           <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
             <h1 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500">
-              David Miller
+              Sabin Chacko
             </h1>
             <h2 className="text-2xl md:text-4xl font-bold text-white">
               Senior Full Stack Engineer | Solutions Architect | Enterprise

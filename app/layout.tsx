@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
 	title: 'Sabin Chacko - Full-Stack Developer',
 	description:
-		'Welcome to my portfolio! I am a passionate full-stack developer who bridges the gap between frontend and backend development. Specializing in creating complete web solutions, from beautiful user interfaces to robust server architectures.',
+		'Portfolio of a Solution Architect & Full-Stack Lead. Architecting scalable web applications and complex APIs with Laravel, React, and cloud platforms (AWS, Azure). I am based in Abu Dhabi, UAE.',
 	keywords: [
 		'Full-Stack Developer',
 		'Software Engineer',
@@ -32,6 +32,8 @@ export const metadata: Metadata = {
 		'System Architecture',
 		'Web Development',
 		'Sabin Chacko',
+		'Solution Artchitect in UAE',
+		'Senior Laravel Developer in UAE',
 	],
 	authors: [{ name: 'Sabin Chacko' }],
 	creator: 'Sabin Chacko',
@@ -39,7 +41,7 @@ export const metadata: Metadata = {
 		title: 'Sabin Chacko - Full-Stack Developer Portfolio',
 		description:
 			'Passionate full-stack developer creating complete web solutions. Explore my projects and technical expertise across the entire development stack.',
-		url: 'https://your-domain.com',
+		url: 'https://sabinchacko03.github.io/',
 		siteName: 'Sabin Chacko - Portfolio',
 		images: [
 			{
