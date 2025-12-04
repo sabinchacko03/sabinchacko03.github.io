@@ -33,16 +33,20 @@ export default function HeroSection() {
               David Miller
             </h1>
             <h2 className="text-2xl md:text-4xl font-bold text-white">
-              Lead Software Engineer
+              Senior Full Stack Engineer | Solutions Architect | Enterprise
+              Integration Lead
             </h2>
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
-              I craft end-to-end solutions with 12+ years of experience building
-              scalable applications and leading development teams.
+              12+ years specializing in designing and scaling robust web
+              applications. I architect complex API Integrations (SAP,
+              Salesforce) and lead end-to-end delivery across the Laravel,
+              AWS/Azure, and Docker stack.
             </p>
             <p className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto">
-              Previously Senior Full Stack Developer at{" "}
-              <span className="text-blue-400">Ducon Industries</span> and Tech
-              Lead at <span className="text-purple-400">DeliveryZone</span>
+              Previously Tech Lead at{" "}
+              <span className="text-blue-400">DeliveryZone</span> and Lead Web
+              Developer at{" "}
+              <span className="text-purple-400">Ducon Industries</span>
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-6 md:mb-8">
@@ -86,20 +90,20 @@ export default function HeroSection() {
                 onMouseLeave={() => setSelectedStack(null)}
               >
                 <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-blue-400">
-                  Frontend Development
+                  Solution Architecture & Design
                 </h3>
                 <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-                    Modern React Architectures
+                    {/* <div className="w-3 h-2 bg-blue-500 rounded-full" /> */}
+                    - Enterprise Systems Integration (SAP/Salesforce)
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-                    Performance Optimization
+                    {/* <div className="w-3 h-2 bg-blue-500 rounded-full" /> */}
+                    - Robust API Design (REST & SOAP Services)
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-                    Responsive & Interactive UIs
+                    {/* <div className="w-3 h-2 bg-blue-500 rounded-full" /> */}
+                    - High-Performance Database Architecture (MS SQL, SAP HANA)
                   </li>
                 </ul>
               </div>
@@ -115,20 +119,20 @@ export default function HeroSection() {
                 onMouseLeave={() => setSelectedStack(null)}
               >
                 <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-purple-400">
-                  Backend Development
+                  Full-Stack Application Leadership
                 </h3>
                 <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-                    API Design & Development
+                    {/* <div className="w-1.5 h-1.5 bg-purple-500 rounded-full" /> */}
+                    - Leading PHP/Laravel Backends & Real-Time Systems
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-                    Database Architecture
+                    {/* <div className="w-1.5 h-1.5 bg-purple-500 rounded-full" /> */}
+                    - Modern Frontend Architectures (React & Vue)
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-                    Real-time Systems
+                    {/* <div className="w-1.5 h-1.5 bg-purple-500 rounded-full" /> */}
+                    - End-to-End Workflow & Delivery Ownership
                   </li>
                 </ul>
               </div>
@@ -144,20 +148,20 @@ export default function HeroSection() {
                 onMouseLeave={() => setSelectedStack(null)}
               >
                 <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-teal-400">
-                  DevOps & Cloud
+                  Cloud Strategy & Scalability
                 </h3>
                 <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
-                    AWS Infrastructure
+                    {/* <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" /> */}
+                    Architecting Scalable Cloud Infrastructure (AWS & Azure)
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
-                    CI/CD Pipelines
+                    {/* <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" /> */}
+                    CI/CD Automation & Docker Deployment
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
-                    Scalable Architecture
+                    {/* <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" /> */}
+                    Performance Optimization & Infrastructure Management
                   </li>
                 </ul>
               </div>
