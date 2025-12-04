@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Project } from "next/dist/build/swc/types";
 import { useEffect, useState } from "react";
 
 export default function HeroSection() {

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import SimplifiArchitecture from "./svg/SimplifiArchitecture";
 import RunRunArchitecture from "./svg/RunRunArchitecture";
+import Image from "next/image";
 
 type Project = {
   title: string;
@@ -108,7 +109,7 @@ export default function ProjectsSection() {
                         {/* You can render SVG or image here using project.architectureSvg or project.architectureImg */}
                         {project.architectureSvg && <ArchitectureComponent />}
                         {project.architectureImg && (
-                          <img
+                          <Image
                             src={project.architectureImg}
                             alt="System Architecture"
                             className="w-full h-full object-contain"

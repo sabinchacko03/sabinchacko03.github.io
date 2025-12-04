@@ -17,9 +17,9 @@ export default function ContactSection() {
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             My focus: Strategic system design, complex API integrations, and
-            hands-on full-stack development. If you're looking for a Technical
+            hands-on full-stack development. If you&apos;re looking for a Technical
             Lead who can deliver production-ready code and cloud deployments,
-            let's connect today.
+            let&apos;s connect today.
           </p>
 
           {/* Location */}
