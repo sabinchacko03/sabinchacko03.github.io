@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 	authors: [{ name: 'Sabin Chacko' }],
 	creator: 'Sabin Chacko',
 	openGraph: {
-		title: 'Sabin Chacko - Full-Stack Developer Portfolio',
+		title: 'Sabin Chacko - Senior Full-Stack Developer Portfolio',
 		description:
 			'Passionate full-stack developer creating complete web solutions. Explore my projects and technical expertise across the entire development stack.',
 		url: 'https://sabinchacko03.github.io/',
