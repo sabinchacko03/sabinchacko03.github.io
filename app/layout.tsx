@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: 'Sabin Chacko - Full-Stack Developer',
+	title: 'Sabin Chacko - Senior Full-Stack Developer & Solution Architect',
 	description:
 		'Portfolio of a Solution Architect & Full-Stack Lead. Architecting scalable web applications and complex APIs with Laravel, React, and cloud platforms (AWS, Azure). I am based in Abu Dhabi, UAE.',
 	keywords: [
