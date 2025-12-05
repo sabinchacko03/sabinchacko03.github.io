@@ -1,8 +1,4 @@
-# Sample workflow for building and deploying a Next.js site to GitHub Pages
-#
-# To get started with Next.js see: https://nextjs.org/docs/getting-started
-#
-name: Deploy Next.js site to Pages
+name: Deploy Next.js to GitHub Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -25,104 +21,75 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Detect package manager
-        id: detect-package-manager
-        run: |
-          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
-            echo "manager=yarn" >> $GITHUB_OUTPUT
-            echo "command=install" >> $GITHUB_OUTPUT
-            echo "runner=yarn" >> $GITHUB_OUTPUT
-            exit 0
-          elif [ -f "${{ github.workspace }}/package.json" ]; then
-            echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=ci" >> $GITHUB_OUTPUT
-            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
-            exit 0
-          else
-            echo "Unable to determine package manager"
-            exit 1
-          fi
-      - name: Setup Node
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
-      - name: Restore cache
-        uses: actions/cache@v3
-        with:
-          path: |
-            .next/cache
-          # Generate a new cache whenever packages or source files change.
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
-          # If source files changed but packages didn't, rebuild from a prior cache.
-          restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
+          cache: "npm"
+
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-      - name: Verify Next.js config
+        run: npm ci
+
+      - name: Verify Next.js configuration
         run: |
-          echo "Current directory: $(pwd)"
-          echo "Workspace: ${{ github.workspace }}"
-          echo "Checking next.config.ts:"
-          cat next.config.ts || echo "next.config.ts not found"
-          echo ""
-          echo "Verifying output setting:"
-          grep -i "output.*export" next.config.ts || echo "output: export not found in config"
-      - name: Build with Next.js
-        working-directory: ${{ github.workspace }}
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+          echo "Verifying next.config.ts:"
+          if [ -f "next.config.ts" ]; then
+            cat next.config.ts
+            echo ""
+            if grep -q "output.*export" next.config.ts; then
+              echo "✓ Static export is configured"
+            else
+              echo "⚠ Warning: output: 'export' not found in config"
+            fi
+          else
+            echo "⚠ Warning: next.config.ts not found"
+          fi
+
+      - name: Build Next.js application
+        run: npm run build
         env:
           NODE_ENV: production
-      - name: Check build status
-        run: |
-          echo "Checking .next directory:"
-          ls -la .next 2>/dev/null || echo ".next directory not found"
-          echo ""
-          echo "Checking for out directory:"
-          ls -la out 2>/dev/null || echo "out directory not found"
-          echo ""
-          echo "Checking next.config.ts after build:"
-          cat next.config.ts || echo "next.config.ts not found"
+
       - name: Verify build output
         run: |
-          echo "Current directory: $(pwd)"
-          echo "Workspace: ${{ github.workspace }}"
-          echo "Listing files in workspace:"
-          ls -la
           if [ ! -d "out" ]; then
-            echo "Error: out directory does not exist after build"
-            echo "Checking for alternative output directories:"
-            find . -type d -name "out" -o -name ".next" 2>/dev/null || true
+            echo "❌ Error: 'out' directory not found after build"
+            echo "Build may have failed or static export is not configured correctly"
+            echo ""
+            echo "Current directory contents:"
+            ls -la
+            echo ""
+            echo "Checking for .next directory:"
+            ls -la .next 2>/dev/null || echo ".next directory not found"
             exit 1
           fi
-          echo "Build output directory exists"
-          ls -la out
+
+          echo "✓ Build successful - 'out' directory found"
+          echo ""
+          echo "Build output contents:"
+          ls -la out | head -20
+          echo ""
+          echo "Total files in out directory:"
+          find out -type f | wc -l
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: out
+          path: ./out
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
-    permissions:
-      pages: write
-      id-token: write
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
