@@ -60,7 +60,7 @@ jobs:
           # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
           #
           # You may remove this line if you want to manage the configuration yourself.
-          # static_site_generator: next
+          static_site_generator: next
       - name: Restore cache
         uses: actions/cache@v3
         with:
@@ -75,10 +75,24 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      - name: Verify build output
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Workspace: ${{ github.workspace }}"
+          echo "Listing files in workspace:"
+          ls -la
+          if [ ! -d "out" ]; then
+            echo "Error: out directory does not exist after build"
+            echo "Checking for alternative output directories:"
+            find . -type d -name "out" -o -name ".next" 2>/dev/null || true
+            exit 1
+          fi
+          echo "Build output directory exists"
+          ls -la out
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: out
 
   # Deployment job
   deploy:
