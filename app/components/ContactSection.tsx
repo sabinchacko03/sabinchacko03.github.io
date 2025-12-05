@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function ContactSection() {
   return (
-    <section className="py-20 px-4">
+    <section className="py-8 md:py-10 px-4">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -12,14 +12,14 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="space-y-8"
         >
-          <h2 className="text-3xl font-bold">
+          <h2 className="text-xl md:text-3xl font-bold">
             Lead Architect. Complete Solutions. Get in Touch.
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto hidden md:block">
             My focus: Strategic system design, complex API integrations, and
-            hands-on full-stack development. If you&apos;re looking for a Technical
-            Lead who can deliver production-ready code and cloud deployments,
-            let&apos;s connect today.
+            hands-on full-stack development. If you&apos;re looking for a
+            Technical Lead who can deliver production-ready code and cloud
+            deployments, let&apos;s connect today.
           </p>
 
           {/* Location */}
@@ -47,7 +47,7 @@ export default function ContactSection() {
           </div>
 
           {/* Contact Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 my-2">
             {/* <a
               href="mailto:david@example.com"
               className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg font-medium hover:opacity-90 transition-opacity inline-flex items-center justify-center gap-2"

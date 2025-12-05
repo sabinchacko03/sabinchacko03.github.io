@@ -16,7 +16,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="min-h-screen relative overflow-hidden py-24 md:py-0">
+    <section className="min-h-screen relative overflow-hidden py-12 md:py-0">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
       </div>
@@ -31,11 +31,11 @@ export default function HeroSection() {
             <h1 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500">
               Sabin Chacko
             </h1>
-            <h2 className="text-2xl md:text-4xl font-bold text-white">
+            <h2 className="text-xl md:text-4xl font-bold text-white">
               Senior Full Stack Engineer | Solutions Architect | Enterprise
               Integration Lead
             </h2>
-            <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
+            <p className="text-normal md:text-xl text-gray-400 max-w-2xl mx-auto">
               12+ years specializing in designing and scaling robust web
               applications. I architect complex API Integrations (SAP,
               Salesforce) and lead end-to-end delivery across the Laravel,
@@ -70,7 +70,7 @@ export default function HeroSection() {
         </motion.div>
 
         {/* Interactive System Architecture */}
-        <div className="w-full max-w-5xl mx-auto relative px-2 md:px-4">
+        <div className="w-full max-w-7xl mx-auto relative px-2 md:px-4">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -152,15 +152,15 @@ export default function HeroSection() {
                 <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
                   <li className="flex items-center gap-2">
                     {/* <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" /> */}
-                    Architecting Scalable Cloud Infrastructure (AWS & Azure)
+                    - Architecting Scalable Cloud Infrastructure (AWS & Azure)
                   </li>
                   <li className="flex items-center gap-2">
                     {/* <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" /> */}
-                    CI/CD Automation & Docker Deployment
+                    - CI/CD Automation & Docker Deployment
                   </li>
                   <li className="flex items-center gap-2">
                     {/* <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" /> */}
-                    Performance Optimization & Infrastructure Management
+                    - Performance Optimization & Infrastructure Management
                   </li>
                 </ul>
               </div>

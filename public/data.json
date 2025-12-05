@@ -1,7 +1,7 @@
 {
     "experience": [{
             "title": "Internal Workflow Engine",
-            "description": "Simplifi is a full-stack enterprise application built to streamline master data workflows, policy governance, internal control reporting, GRC automation, and external account management. It features modular capabilities including SAP-integrated business partner management, delegation of authority (DOA), ICFR dashboards, and Etisalat account provisioning. The platform also integrates with Pathlock to automate user access provisioning and trigger GRC controls within SAP, enhancing compliance and audit readiness.",
+            "description": "As the Solution Architect and Lead Developer, I designed and architected Simplifi, a mission-critical enterprise platform that automated master data workflows, GRC controls, and compliance reporting. The core value was enabling complex, real-time integration with major enterprise systems, including SAP for business partner management and Pathlock for automated user access provisioning and audit readiness. This full-stack solution featured modular capabilities like ICFR dashboards and Delegation of Authority (DOA), ensuring a secure and streamlined internal control environment.",
             "sections": [{
                     "title": "Application Structure",
                     "color": "text-blue-400",
@@ -30,11 +30,12 @@
 
             ],
             "architectureTitle": "Workflow Application Architecture",
-            "architectureSvg": "SimplifiArchitecture"
+            "architectureSvg": "SimplifiArchitecture",
+            "showArchitecture": true
         },
         {
             "title": "RunRun Ecommerce (Wayno)",
-            "description": "A high-performance, growth-oriented marketplace platform designed to support multiple vendors with comprehensive shop and product management capabilities. The system includes courier and rider tracking apps for real-time logistics monitoring.",
+            "description": "I served as the Technical Lead, overseeing the architecture and full-stack development of this high-performance, multi-vendor marketplace platform. The key challenge involved architecting a scalable platform capable of supporting multiple simultaneous vendors while managing real-time logistics and delivery. I designed and integrated complex APIs, successfully achieving integration with the Abu Dhabi Police app for compliant courier deliveries. This solution featured comprehensive shop/product management APIs and integrated courier/rider tracking systems for continuous logistics monitoring.",
             "sections": [{
                     "title": "Features",
                     "color": "text-blue-400",
@@ -69,7 +70,48 @@
                 "Stakeholder Engagement: Conducted meetings with third-party stakeholders, including government entities, to align on compliance, integrations, and operational workflows."
             ],
             "architectureTitle": "System Architecture",
-            "architectureSvg": "RunRunArchitecture"
+            "architectureSvg": "RunRunArchitecture",
+            "showArchitecture": true
+        }, {
+            "title": "Ducon Outdoor Living (duconodl.com)",
+            "description": "I led the full-stack architecture and end-to-end delivery of high-visibility commercial websites. This particular project was initially built on PHP/Yii2 while others where built on Concrete5 and Wordpress. The scope included a successful architectural rebuild and migration to Laravel, featuring a complex Salesforce API integration for core backend services. My ownership covered secure architecture, cloud deployment, and the highly responsive product interface.",
+            "sections": [{
+                    "title": "Features",
+                    "color": "text-blue-400",
+                    "items": [
+                        "Ecommerce Web app",
+                        "Centralized Product Catalog",
+                        "Showroom Virtual Tour"
+                    ]
+                },
+                {
+                    "title": "Integrations",
+                    "color": "text-purple-400",
+                    "items": [
+                        "Salesforce API integration for product catalog",
+                        "Matterport 3D model integration for showroom virtual tour"
+                    ]
+                }, {
+                    "title": "Technical Stack",
+                    "color": "text-purple-400",
+                    "items": [
+                        "PHP, Laravel, Yii2, MySQL",
+                        "React, JQuery, Bootstrap, Google Tag Manager",
+                        "REST API, Salesforce API"
+                    ]
+                }
+            ],
+            "achievementsTitle": "Key Responsibilities",
+            "achievements": [
+                "Led Development Teams: Oversaw and guided a team of developers to ensure timely delivery of high-quality e-commerce solutions.",
+                "Application Monitoring & Optimization: Monitored all company e-commerce applications, ensuring performance, security, and scalability.",
+                "Cross-Functional Collaboration: Worked closely with the digital marketing team to enhance SEO strategies and optimize campaigns for improved visibility and conversions.",
+                "System Integrations: Successfully integrated multiple third-party systems and services to streamline operations and improve user experience.",
+                "Website Revamp: Spearheaded major website redesigns and enhancements, resulting in improved UI/UX and increased engagement."
+            ],
+            "architectureTitle": "System Architecture",
+            "architectureSvg": "",
+            "showArchitecture": false
         }
     ],
     "skills": [{
