@@ -53,14 +53,6 @@ jobs:
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-        with:
-          # Automatically inject basePath in your Next.js configuration file and disable
-          # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
-          #
-          # You may remove this line if you want to manage the configuration yourself.
-          static_site_generator: next
       - name: Restore cache
         uses: actions/cache@v3
         with:
@@ -73,8 +65,30 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Verify Next.js config
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Workspace: ${{ github.workspace }}"
+          echo "Checking next.config.ts:"
+          cat next.config.ts || echo "next.config.ts not found"
+          echo ""
+          echo "Verifying output setting:"
+          grep -i "output.*export" next.config.ts || echo "output: export not found in config"
       - name: Build with Next.js
+        working-directory: ${{ github.workspace }}
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        env:
+          NODE_ENV: production
+      - name: Check build status
+        run: |
+          echo "Checking .next directory:"
+          ls -la .next 2>/dev/null || echo ".next directory not found"
+          echo ""
+          echo "Checking for out directory:"
+          ls -la out 2>/dev/null || echo "out directory not found"
+          echo ""
+          echo "Checking next.config.ts after build:"
+          cat next.config.ts || echo "next.config.ts not found"
       - name: Verify build output
         run: |
           echo "Current directory: $(pwd)"
