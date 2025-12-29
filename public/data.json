@@ -130,14 +130,9 @@
             "description": "Proficient in Javascript and how to use it to build modern web applications."
         },
         {
-            "name": "REST API",
-            "level": "Expert",
-            "description": "Proficient in REST APIs, implemented numerous integrations with third party services."
-        },
-        {
-            "name": "SQL",
-            "level": "Expert",
-            "description": "Proficient in SQL, worked with MySQL, PostgreSQL, MSSQL and HanaDB."
+            "name": "React",
+            "level": "Intermediate",
+            "description": "Proficient in React, Redux, and React Router for building scalable web applications."
         },
         {
             "name": "Python",
@@ -150,14 +145,19 @@
             "description": "Intermediate knowledge."
         },
         {
-            "name": "React",
+            "name": "FastAPI",
             "level": "Intermediate",
-            "description": "Proficient in React, Redux, and React Router for building scalable web applications."
+            "description": "Intermediate knowledge."
         },
         {
-            "name": "Next.js",
-            "level": "Intermediate",
-            "description": "Basic knowledge of Next.js, used it to build portfolios and small projects."
+            "name": "API",
+            "level": "Expert",
+            "description": "Proficient in REST APIs, implemented numerous integrations with third party services."
+        },
+        {
+            "name": "SQL",
+            "level": "Expert",
+            "description": "Proficient in SQL, worked with MySQL, PostgreSQL, MSSQL and HanaDB."
         },
         {
             "name": "AWS",
