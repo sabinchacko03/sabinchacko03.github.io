@@ -1,40 +1,45 @@
 {
     "experience": [{
-            "title": "Internal Workflow Engine",
-            "description": "As the Solution Architect and Lead Developer, I designed and architected Simplifi, a mission-critical enterprise platform that automated master data workflows, GRC controls, and compliance reporting. The core value was enabling complex, real-time integration with major enterprise systems, including SAP for business partner management and Pathlock for automated user access provisioning and audit readiness. This full-stack solution featured modular capabilities like ICFR dashboards and Delegation of Authority (DOA), ensuring a secure and streamlined internal control environment.",
+            "title": "Simplifi | Enterprise Workflow Automation Platform",
+            "company": "Ittihad International Investment",
+            "period": "Lead Software Engineer & Solutions Architect · 02/2023 – Present",
+            "description": "As the Solution Architect and Lead Engineer, I designed Simplifi, a mission-critical platform automating master data workflows, GRC controls, and compliance reporting for 400+ users. I architected a NestJS gateway for SAP PO/SO/PR approval automation (contract-first OpenAPI, idempotent ingestion, transactional outbox with dead-letter retry) and a bi-directional SAP/Salesforce integration hub, alongside a Python/FastAPI service layer for automated SoD compliance checks. The platform runs on a high-availability Azure environment with full observability (logging, correlation IDs, Slack alerting), with services Dockerized into air-gapped VMs behind nginx/Azure Application Gateway.",
             "sections": [{
                     "title": "Application Structure",
                     "color": "text-blue-400",
                     "items": [
-                        "Laravel, MSSQL Server, HanaDB",
-                        "Livewire, Javascript & TailwindCSS",
-                        "Azure, Ubntu, Nginx, Azure WAF, SSO"
+                        "Laravel, NestJS/TypeScript, Python/FastAPI",
+                        "MS SQL Server, SAP HANA",
+                        "Livewire, JavaScript & TailwindCSS",
+                        "Azure (HA), Docker, Nginx, Azure App Gateway/WAF, SSO"
                     ]
                 },
                 {
                     "title": "Integrations",
                     "color": "text-purple-400",
                     "items": [
-                        "SAP: Business Partner workflows",
-                        "Salesforce: Customer onboarding",
-                        "Pathlock: Access provisioning & GRC",
-                        "SAP: Automating PR,PO & SO workflows"
+                        "SAP: PO/SO/PR approval automation (NestJS gateway)",
+                        "SAP: Business Partner & DOA policy workflows",
+                        "Salesforce: Bi-directional customer onboarding hub",
+                        "Pathlock: Access provisioning & automated SoD/GRC"
                     ]
                 }
             ],
             "achievementsTitle": "Key Achievements",
             "achievements": [
-                "Automated 90% of Business Partner workflows",
-                "Implemented DOA module for group-wide policy and transaction governance",
-                "Resolved SAP approval bottlenecks across multi-layered workflows"
-
+                "Saved AED 550K+ a year (2.7 FTEs) from the Business Partner module alone at 100% audit compliance",
+                "Automated group-wide DOA policy matrices and vendor onboarding across multiple subsidiaries",
+                "Delivered 12+ end-to-end workflow automations with a custom SAP HANA connector, cutting manual effort by 88%",
+                "Led 3–4 engineers in Agile delivery, translating IT, Group Compliance and FP&A requirements into C4 architectural blueprints"
             ],
             "architectureTitle": "Workflow Application Architecture",
             "architectureSvg": "SimplifiArchitecture",
             "showArchitecture": true
         },
         {
-            "title": "RunRun Ecommerce (Wayno)",
+            "title": "Wayno & Dispatcher | B2B Logistics and Delivery Platform",
+            "company": "Delivery Zone",
+            "period": "Lead Software Developer · 07/2021 – 01/2023",
             "description": "I served as the Technical Lead, overseeing the architecture and full-stack development of this high-performance, multi-vendor marketplace platform. The key challenge involved architecting a scalable platform capable of supporting multiple simultaneous vendors while managing real-time logistics and delivery. I designed and integrated complex APIs, successfully achieving integration with the Abu Dhabi Police app for compliant courier deliveries. This solution featured comprehensive shop/product management APIs and integrated courier/rider tracking systems for continuous logistics monitoring.",
             "sections": [{
                     "title": "Features",
@@ -74,6 +79,8 @@
             "showArchitecture": true
         }, {
             "title": "Ducon Outdoor Living (duconodl.com)",
+            "company": "Ducon Industries FZCO",
+            "period": "Lead Web Developer · 04/2019 – 07/2021",
             "description": "I led the full-stack architecture and end-to-end delivery of high-visibility commercial websites. This particular project was initially built on PHP/Yii2 while others where built on Concrete5 and Wordpress. The scope included a successful architectural rebuild and migration to Laravel, featuring a complex Salesforce API integration for core backend services. My ownership covered secure architecture, cloud deployment, and the highly responsive product interface.",
             "sections": [{
                     "title": "Features",
@@ -114,61 +121,24 @@
             "showArchitecture": false
         }
     ],
-    "skills": [{
-            "name": "Laravel",
-            "level": "Expert",
-            "description": "Proficient in Laravel & Laravel tools for building scalable web applications."
-        },
-        {
-            "name": "PHP",
-            "level": "Expert",
-            "description": "Understand the core concepts of PHP and how to use it to build scalable web applications."
-        },
-        {
-            "name": "Javascript",
-            "level": "Expert",
-            "description": "Proficient in Javascript and how to use it to build modern web applications."
-        },
-        {
-            "name": "React",
-            "level": "Intermediate",
-            "description": "Proficient in React, Redux, and React Router for building scalable web applications."
-        },
-        {
-            "name": "Python",
-            "level": "Intermediate",
-            "description": "Intermediate knowledge."
-        },
-        {
-            "name": "Django",
-            "level": "Intermediate",
-            "description": "Intermediate knowledge."
-        },
-        {
-            "name": "FastAPI",
-            "level": "Intermediate",
-            "description": "Intermediate knowledge."
-        },
-        {
-            "name": "API",
-            "level": "Expert",
-            "description": "Proficient in REST APIs, implemented numerous integrations with third party services."
-        },
-        {
-            "name": "SQL",
-            "level": "Expert",
-            "description": "Proficient in SQL, worked with MySQL, PostgreSQL, MSSQL and HanaDB."
-        },
-        {
-            "name": "AWS",
-            "level": "Intermediate",
-            "description": "EC2, S3,RDS, Lightsail."
-        },
-        {
-            "name": "Linux",
-            "level": "Intermediate",
-            "description": "Devops, CI/CD, Docker, Github Actions."
-        }
+    "skills": [
+        { "name": "PHP 8.x / Laravel", "category": "stack", "level": "Expert" },
+        { "name": "NestJS / TypeScript", "category": "stack", "level": "Expert" },
+        { "name": "Python / FastAPI", "category": "stack", "level": "Intermediate" },
+        { "name": "ReactJS", "category": "stack", "level": "Intermediate" },
+        { "name": "React Native", "category": "stack", "level": "Intermediate" },
+        { "name": "TailwindCSS", "category": "stack", "level": "Expert" },
+        { "name": "SAP HANA", "category": "integration", "level": "Expert" },
+        { "name": "Salesforce API", "category": "integration", "level": "Expert" },
+        { "name": "REST / SOAP", "category": "integration", "level": "Expert" },
+        { "name": "OAuth2 / Webhooks", "category": "integration", "level": "Expert" },
+        { "name": "MS SQL Server", "category": "integration", "level": "Expert" },
+        { "name": "PostgreSQL / MySQL", "category": "integration", "level": "Expert" },
+        { "name": "Redis", "category": "integration", "level": "Intermediate" },
+        { "name": "AWS", "category": "cloud", "level": "Intermediate" },
+        { "name": "Azure", "category": "cloud", "level": "Expert" },
+        { "name": "Docker", "category": "cloud", "level": "Expert" },
+        { "name": "CI/CD", "category": "cloud", "level": "Expert" }
     ],
     "projects": [{
         "name": "Workflow Engine",

@@ -8,6 +8,8 @@ import Image from "next/image";
 
 type Project = {
   title: string;
+  company?: string;
+  period?: string;
   description: string;
   sections: {
     title: string;
@@ -79,10 +81,19 @@ export default function ProjectsSection() {
                   >
                     <div className="space-y-6">
                       <div>
-                        <h3 className="text-2xl font-bold mb-4">
+                        <h3 className="text-2xl font-bold mb-1">
                           {project.title}
                         </h3>
-                        <p className="text-gray-400">{project.description}</p>
+                        {(project.company || project.period) && (
+                          <p className="text-sm text-teal-400 mb-4">
+                            {project.company}
+                            {project.company && project.period ? " — " : ""}
+                            {project.period}
+                          </p>
+                        )}
+                        <p className="text-gray-400 mt-4">
+                          {project.description}
+                        </p>
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {project.sections.map((section, sidx) => (

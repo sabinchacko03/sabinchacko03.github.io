@@ -13,35 +13,38 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: 'Sabin Chacko - Senior Full-Stack Developer & Solution Architect',
+	metadataBase: new URL('https://sabinchacko03.github.io/'),
+	title: 'Sabin Chacko - Lead Software Engineer & Solutions Architect',
 	description:
-		'Portfolio of a Solution Architect & Full-Stack Lead. Architecting scalable web applications and complex APIs with Laravel, React, and cloud platforms (AWS, Azure). I am based in Abu Dhabi, UAE.',
+		'Lead Software Engineer and Solutions Architect with 13+ years designing and scaling high-availability enterprise platforms across the UAE. Expert in SAP/Salesforce integration hubs, NestJS API gateways, and cloud-native delivery on Azure/AWS. Based in Abu Dhabi, UAE.',
 	keywords: [
-		'Full-Stack Developer',
+		'Lead Software Engineer',
+		'Solutions Architect',
+		'Enterprise Systems Integration',
 		'Software Engineer',
-		'Frontend Development',
 		'Backend Development',
 		'Laravel',
 		'PHP',
+		'NestJS',
+		'TypeScript',
 		'FastAPI',
 		'React',
-		'Next.js',
-		'TypeScript',	
+		'SAP Integration',
+		'Salesforce API',
 		'Database Design',
 		'API Development',
 		'Cloud Solutions',
 		'System Architecture',
-		'Web Development',
 		'Sabin Chacko',
-		'Solution Artchitect in UAE',
-		'Senior Laravel Developer in UAE',
+		'Solutions Architect in UAE',
+		'Lead Software Engineer in UAE',
 	],
 	authors: [{ name: 'Sabin Chacko' }],
 	creator: 'Sabin Chacko',
 	openGraph: {
-		title: 'Sabin Chacko - Senior Full-Stack Developer Portfolio',
+		title: 'Sabin Chacko - Lead Software Engineer & Solutions Architect',
 		description:
-			'Passionate full-stack developer creating complete web solutions. Explore my projects and technical expertise across the entire development stack.',
+			'13+ years designing and scaling high-availability enterprise platforms across the UAE. Explore my SAP/Salesforce integration work, NestJS API gateways, and cloud architecture projects.',
 		url: 'https://sabinchacko03.github.io/',
 		siteName: 'Sabin Chacko - Portfolio',
 		images: [
@@ -49,7 +52,7 @@ export const metadata: Metadata = {
 				url: '/og-image.jpg',
 				width: 1200,
 				height: 630,
-				alt: 'Sabin Chacko - Full-Stack Developer Portfolio',
+				alt: 'Sabin Chacko - Lead Software Engineer & Solutions Architect',
 			},
 		],
 		locale: 'en_US',
@@ -57,10 +60,9 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Sabin Chacko - Full-Stack Developer',
+		title: 'Sabin Chacko - Lead Software Engineer & Solutions Architect',
 		description:
-			'Passionate full-stack developer creating complete web solutions. Explore my projects and technical expertise across the entire development stack.',
-		creator: '@yourusername',
+			'13+ years designing and scaling high-availability enterprise platforms across the UAE. Explore my SAP/Salesforce integration work, NestJS API gateways, and cloud architecture projects.',
 		images: ['/og-image.jpg'],
 	},
 	robots: {

@@ -3,11 +3,13 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
+type Skill = { name: string; category?: "integration" | "stack" | "cloud" };
+
 export default function HeroSection() {
   const [selectedStack, setSelectedStack] = useState<
     "frontend" | "backend" | "devops" | null
   >(null);
-  const [skillsData, setSkillsData] = useState<[]>([]);
+  const [skillsData, setSkillsData] = useState<Skill[]>([]);
 
   useEffect(() => {
     fetch("/data.json")
@@ -21,7 +23,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
       </div>
 
-      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 pt-8 md:pt-0">
+      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 pt-24 pb-12 md:pt-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,30 +34,62 @@ export default function HeroSection() {
               Sabin Chacko
             </h1>
             <h2 className="text-xl md:text-4xl font-bold text-white">
-              Senior Full Stack Engineer | Solutions Architect | Enterprise
-              Integration Lead
+              Lead Software Engineer | Solutions Architect | Enterprise
+              Systems Integration
             </h2>
             <p className="text-normal md:text-xl text-gray-400 max-w-2xl mx-auto">
-              12+ years specializing in designing and scaling robust web
-              applications. I architect complex API Integrations (SAP,
-              Salesforce) and lead end-to-end delivery across the Laravel,
-              AWS/Azure, and Docker stack.
+              13+ years designing and scaling high-availability enterprise
+              platforms across the UAE. Expert in bi-directional integration
+              hubs (SAP, Salesforce), resilient NestJS API gateways
+              (idempotent ingestion, transactional outbox, queue-backed
+              retry) and cloud-native delivery on Azure/AWS.
             </p>
             <p className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto">
-              Previously Tech Lead at{" "}
-              <span className="text-blue-400">DeliveryZone</span> and Lead Web
-              Developer at{" "}
+              Currently Lead Software Engineer at{" "}
+              <span className="text-teal-400">
+                Ittihad International Investment
+              </span>
+              . Previously Tech Lead at{" "}
+              <span className="text-blue-400">Delivery Zone</span> and Lead
+              Web Developer at{" "}
               <span className="text-purple-400">Ducon Industries</span>
             </p>
           </div>
+
+          <div className="flex flex-wrap justify-center gap-4 md:gap-10 mb-6 md:mb-8 text-center">
+            <div>
+              <div className="text-2xl md:text-3xl font-bold text-blue-400">
+                13+
+              </div>
+              <div className="text-xs md:text-sm text-gray-500">
+                Years Experience
+              </div>
+            </div>
+            <div>
+              <div className="text-2xl md:text-3xl font-bold text-purple-400">
+                AED 550K+
+              </div>
+              <div className="text-xs md:text-sm text-gray-500">
+                Saved Annually (2.7 FTEs)
+              </div>
+            </div>
+            <div>
+              <div className="text-2xl md:text-3xl font-bold text-teal-400">
+                100%
+              </div>
+              <div className="text-xs md:text-sm text-gray-500">
+                Audit Compliance
+              </div>
+            </div>
+          </div>
+
           <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-6 md:mb-8">
-            {skillsData.map((skill: { name: string }) => {
-              // Map skill names to color classes
+            {skillsData.map((skill) => {
               let colorClass = "bg-blue-500/10 text-blue-400";
-              if (/php|laravel|sql|rest api/i.test(skill.name)) {
-                colorClass = "bg-teal-500/10 text-teal-400";
-              } else if (/react|next\.js|javascript/i.test(skill.name)) {
+              if (skill.category === "stack") {
                 colorClass = "bg-purple-500/10 text-purple-400";
+              } else if (skill.category === "cloud") {
+                colorClass = "bg-teal-500/10 text-teal-400";
               }
               return (
                 <span
@@ -94,15 +128,16 @@ export default function HeroSection() {
                 <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
                   <li className="flex items-center gap-2">
                     {/* <div className="w-3 h-2 bg-blue-500 rounded-full" /> */}
-                    - Enterprise Systems Integration (SAP/Salesforce)
+                    - Bi-Directional Integration Hubs (SAP ↔ Salesforce)
                   </li>
                   <li className="flex items-center gap-2">
                     {/* <div className="w-3 h-2 bg-blue-500 rounded-full" /> */}
-                    - Robust API Design (REST & SOAP Services)
+                    - Resilient NestJS API Gateways (idempotent ingestion,
+                    transactional outbox, dead-letter retry)
                   </li>
                   <li className="flex items-center gap-2">
                     {/* <div className="w-3 h-2 bg-blue-500 rounded-full" /> */}
-                    - High-Performance Database Architecture (MS SQL, SAP HANA)
+                    - Contract-First API Design (OpenAPI, REST & SOAP)
                   </li>
                 </ul>
               </div>
@@ -123,11 +158,11 @@ export default function HeroSection() {
                 <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
                   <li className="flex items-center gap-2">
                     {/* <div className="w-1.5 h-1.5 bg-purple-500 rounded-full" /> */}
-                    - Leading PHP/Laravel Backends & Real-Time Systems
+                    - Leading PHP/Laravel & NestJS/TypeScript Backends
                   </li>
                   <li className="flex items-center gap-2">
                     {/* <div className="w-1.5 h-1.5 bg-purple-500 rounded-full" /> */}
-                    - Modern Frontend Architectures (React & Vue)
+                    - Modern Frontend Architectures (React, React Native)
                   </li>
                   <li className="flex items-center gap-2">
                     {/* <div className="w-1.5 h-1.5 bg-purple-500 rounded-full" /> */}
@@ -160,7 +195,8 @@ export default function HeroSection() {
                   </li>
                   <li className="flex items-center gap-2">
                     {/* <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" /> */}
-                    - Performance Optimization & Infrastructure Management
+                    - High-Availability Design with Observability (Logging,
+                    Correlation IDs, Alerting)
                   </li>
                 </ul>
               </div>
