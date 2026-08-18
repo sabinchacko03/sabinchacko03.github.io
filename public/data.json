@@ -30,6 +30,7 @@
                 "Saved AED 550K+ a year (2.7 FTEs) from the Business Partner module alone at 100% audit compliance",
                 "Automated group-wide DOA policy matrices and vendor onboarding across multiple subsidiaries",
                 "Delivered 12+ end-to-end workflow automations with a custom SAP HANA connector, cutting manual effort by 88%",
+                "Scaled the platform well beyond its MVP as traffic and data volume grew, through continuous SQL query optimization, PHP-FPM worker tuning, slow-query log monitoring, and observability tooling to sustain performance under load",
                 "Led 3–4 engineers in Agile delivery, translating IT, Group Compliance and FP&A requirements into C4 architectural blueprints"
             ],
             "architectureTitle": "Workflow Application Architecture",
@@ -117,6 +118,38 @@
                 "Website Revamp: Spearheaded major website redesigns and enhancements, resulting in improved UI/UX and increased engagement."
             ],
             "architectureTitle": "System Architecture",
+            "architectureSvg": "",
+            "showArchitecture": false
+        }, {
+            "title": "Infinite Open Source Solutions & Braddock Infotech | Early Career",
+            "company": "India",
+            "period": "Web Developer → Team Leader · 2013 – 2019",
+            "description": "Before moving to the UAE, I grew from Web Developer to Team Leader across two India-based firms, building the full-stack and systems programming foundation behind my later enterprise integration work.",
+            "sections": [{
+                    "title": "Roles",
+                    "color": "text-blue-400",
+                    "items": [
+                        "Team Leader, Infinite Open Source Solutions (10/2017 – 02/2019)",
+                        "Software Programmer, Braddock Infotech (2015 – 2017)",
+                        "Web Developer, Infinite Open Source Solutions (2013 – 2015)"
+                    ]
+                },
+                {
+                    "title": "Highlights",
+                    "color": "text-purple-400",
+                    "items": [
+                        "Directed the delivery lifecycle and mentored developers on coding standards & testing protocols",
+                        "Built PHP/Python socket applications for Telecom LCR (Least Cost Routing) systems",
+                        "Promoted to Team Lead after delivering MLM applications"
+                    ]
+                }
+            ],
+            "achievementsTitle": "Key Responsibilities",
+            "achievements": [
+                "Team Leadership: Directed the delivery lifecycle, mentoring developers on coding standards and testing protocols",
+                "Client Management: Owned client communication and used PM tools to set deadlines and delegate tasks"
+            ],
+            "architectureTitle": "",
             "architectureSvg": "",
             "showArchitecture": false
         }

@@ -71,10 +71,10 @@ export default function HeroSection() {
             </div>
             <div>
               <div className="text-2xl md:text-3xl font-bold text-purple-400">
-                AED 550K+
+                88%
               </div>
               <div className="text-xs md:text-sm text-gray-500">
-                Saved Annually (2.7 FTEs)
+                Manual Effort Reduced
               </div>
             </div>
             <div>
